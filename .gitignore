@@ -8,3 +8,5 @@ Gemfile.lock
 tmp
 vendor
 .DS_Store
+dotenv.sublime-project
+dotenv.sublime-workspace

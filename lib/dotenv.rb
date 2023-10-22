@@ -81,6 +81,9 @@ module Dotenv
 
   def ignoring_nonexistent_files
     yield
-  rescue Errno::ENOENT
+  rescue Errno::ENOENT => e
+  puts "Exception Class: #{ e.class.name }"
+  puts "Exception Message: #{ e.message }"
+  puts "Exception Backtrace: #{ e.backtrace }"
   end
 end
